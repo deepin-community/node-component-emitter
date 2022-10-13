@@ -1,0 +1,14 @@
+Description: Use system libs
+--- a/Makefile
++++ b/Makefile
+@@ -1,7 +1,7 @@
+ 
+ test:
+-	@./node_modules/.bin/mocha \
++	@mocha \
+ 		--require should \
+ 		--reporter spec
+ 
+-.PHONY: test
+\ No newline at end of file
++.PHONY: test
